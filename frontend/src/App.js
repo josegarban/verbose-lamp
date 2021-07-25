@@ -8,13 +8,13 @@ import Category from './components/Category';
 
 const App = () => (<Router>
     <Layout>
-      <Switch>
-        <Route exact path="/" component={Home}></Route>
-        <Route exact path="/blog" component={Blog}></Route>
-        <Route exact path="/category/:id" component={Category}></Route>
-        <Route exact path="/blog/:id" component={BlogDetail}></Route>
-      </Switch>
     </Layout>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/blog" component={Blog}/>
+        <Route exact path="/category/:id" component={Category}/>
+        <Route exact path="/blog/:id" component={BlogDetail}/>
+      </Switch>
   </Router>
 );
 
