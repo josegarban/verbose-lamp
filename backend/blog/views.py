@@ -4,6 +4,10 @@ from rest_framework.views import APIView
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from blog.models import BlogPost
 from blog.serializers import BlogPostSerializer
+from django.shortcuts import render
+
+# def index(request, *args, **kwargs):
+#     return render(request, 'blog/index.html')
 
 class BlogPostListView(ListAPIView):
     queryset = BlogPost.objects.order_by('-date_created')
